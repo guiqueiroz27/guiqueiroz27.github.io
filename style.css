@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 html {
-    font-size: 16px; /* Definindo o tamanho da fonte do elemento raiz */
+    font-size: 16px;
 }
 
 .poppins-light {
@@ -82,13 +82,13 @@ header h2 a:focus {
 }
 
 .streaming .listen-now {
-    display: block; /* Garante que o elemento ocupe toda a linha */
-    margin-bottom: -20px; /* Reduz a margem inferior */
+    display: block; 
+    margin-bottom: -20px; 
     font-weight: bold;
 }
 
 .streaming nav {
-    margin-top: 0; /* Remove a margem superior */
+    margin-top: 0; 
 }
 
 .streaming nav a {
