@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>🧮 Calculadora inversa de inflação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Calculadora de inflação reversa 💰📈</h1>
+            <p>Vamos descobrir: qual seria o seu poder de compra com o seu salário atual no ano de lançamento do Plano Real? 🤔</p>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="container">
+            <h4>Criado em 1994 no governo Itamar Franco, o Plano Real foi concebido para resolver uma crise grave</h4>
+            <p>A inflação chegava a 3000% ao ano antes do real 🆘 🆘 🆘</p>
+            <div class="image-container">
+                <img src="dolar.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <p>Considerado um sucesso, o Real substituiu o Cruzeiro Real, a moeda anterior, e completa 20 anos em 2024. </p>
+                <p><strong>Mas a inflação acabou após o Plano Real?</strong></p>
+            <p>Não. Todo ano, os preços aumentam. De 1994 para 2024, o IPCA (Índice Nacional de Preços ao Consumidor Amplo) acumulou alta de <strong>508,23%</strong></p>
+            <h4>Em 1994, o salário mínimo era de R$70,00. Em 2024, é R$1412,00</h4>
+        </div>
+    </section>
+    <section class="calculator">
+        <div class="container">
+            <h3>Calculadora: e se você ganhasse o seu salário em 1994, o que compraria?</h3>
+            <label for="salary">Insira aqui o seu salário:</label>
+            <input type="number" id="salary" placeholder="Digite seu salário">
+            <button onclick="calculate()">CLIQUE AQUI</button>
+            <div id="results" style="display:none;">
+                <p>Em 1994, o salário mínimo era R$70,00, com o seu salário, de R$<span id="currentSalary"></span>, você compraria:</p>
+                <div class="item">
+                    <img src="arroz.jpg" alt="Arroz">
+                    <p>ARROZ: <span id="arroz1994"></span> quilos de arroz (R$0,82 em 1994) | hoje, você compra <span id="arrozHoje"></span> quilos (R$4,39 em 2024)</p>
+                </div>
+                <div class="item">
+                    <img src="file.jpg" alt="Filé Mignon">
+                    <p>FILÉ MIGNON: <span id="file1994"></span> quilos de filé mignon (R$6,80 em 1994) | hoje, você compra <span id="fileHoje"></span> quilos (R$69,99 em 2024)</p>
+                </div>
+                <div class="item">
+                    <img src="whisky.jpg" alt="Whisky">
+                    <p>Whisky Jack Daniel's: <span id="whisky1994"></span> garrafas da bebida (R$33,50 em 1994) | hoje, você compra <span id="whiskyHoje"></span> garrafas (R$139,90 em 2024)</p>
+                </div>
+                <div class="item">
+                    <img src="dolar.jpg" alt="Dólares">
+                    <p>Dólares: <span id="dolar1994"></span> dólares (R$1,00 em 1994) | hoje, você compra <span id="dolarHoje"></span> dólares (R$5,30 em 2024)</p>
+                </div>
+                <div class="item">
+                    <img src="cerveja.jpg" alt="Cerveja">
+                    <p>Cerveja de 600 ml: <span id="cerveja1994"></span> garrafas (R$1,16 em 1994) | hoje, você compra <span id="cervejaHoje"></span> garrafas (R$9,90 em 2024)</p>
+                </div>
+                <div class="item">
+                    <img src="vinho.jpg" alt="Vinho de mesa">
+                    <p>Vinho de mesa: <span id="vinho1994"></span> garrafas de vinho (R$3,99 em 1994) | hoje, você compra <span id="vinhoHoje"></span> garrafas de vinho (R$18,99 em 2024)</p>
+                </div>
+                <div class="item">
+                    <img src="leite.jpg" alt="Leite">
+                    <p>Leite: <span id="leite1994"></span> litros de leite (R$0,69 em 1994) | hoje, você compra <span id="leiteHoje"></span> litros de leite (R$5,21 em 2024)</p>
+                </div>
+                <div class="item">
+                    <img src="pao.jpg" alt="Pão francês">
+                    <p>Pão francês: <span id="pao1994"></span> pães (R$0,10 em 1994) | hoje, você compra <span id="paoHoje"></span> pães (R$1,04 em 2024)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
